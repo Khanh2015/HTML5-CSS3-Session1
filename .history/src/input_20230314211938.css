@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-menu {
+    @apply inline-block px-4 py-2 md:p-0 my-2 md:my-0 text-white md:text-black hover:text-black hover:bg-white md:hover:text-red-500 duration-150
+}

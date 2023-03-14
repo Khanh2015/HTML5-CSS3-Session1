@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <i class="fa-solid fa-bars"></i> -->
+    <title>Session 1</title>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .active {
+        top: 70px;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-5 md:p-10 lg:px-0 lg:py-10 mx-auto">
+      <header class="flex justify-between items-center lg:px-20">
+        <div class="logo flex items-center">
+          <a href="#" class="w-10"
+            ><img src="./img/logo.png" alt="" class=""
+          /></a>
+          <a href="" class="font-bold text-[#1694E8]">Logoipsum</a>
+        </div>
+
+        <nav
+          class="menu fixed md:static -top-full left-0 w-full md:w-fit text-center bg-slate-500 md:bg-transparent duration-500 py-4 md:py-0"
+        >
+          <ul class="md:flex md:items-center md:gap-5 lg:gap-10">
+            <li class=""><a href="" class="link-menu">Home</a></li>
+            <li class=""><a href="" class="link-menu">About Us</a></li>
+            <li class=""><a href="" class="link-menu">Services</a></li>
+            <li class=""><a href="" class="link-menu">Portfolio</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href=""
+          class="bg-[#0099FF] px-[66px] py-3 text-white font-medium rounded duration-150 hover:opacity-70 lg:text-lg"
+          >Contact</a
+        >
+
+        <div class="menu-icon text-xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <div
+        class="banner px-5 md:px-10 lg:px-0 bg-[#1694E8] text-center py-[120px] mt-8"
+      >
+        <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-bold">
+          Our Portfolio
+        </h1>
+        <p class="mt-5 lg:text-lg text-white">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia <br />
+          consequat duis enim velit mollit. Exercitation veniam
+        </p>
+      </div>
+
+      <main class=""></main>
+    </div>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const menu = document.querySelector(".menu");
+      menuIcon.addEventListener("click", function () {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
